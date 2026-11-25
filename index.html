@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07060B"><title>para mamá</title>
+<style>
+html,body{margin:0;height:100%;background:#07060B;overflow:hidden;touch-action:none}
+canvas{display:block;position:fixed;inset:0}
+#go{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;font:600 14px ui-monospace,Menlo,Consolas,monospace;color:#B9A3E3;transition:opacity 1.6s}
+#go.off{opacity:0;pointer-events:none}
+#go button{all:unset;cursor:pointer;padding:14px 34px;color:#FFF6EC;letter-spacing:.35em;text-transform:uppercase;font:600 15px ui-monospace,Menlo,Consolas,monospace;border:1px solid #B9A3E3;box-shadow:0 0 0 4px #07060B,0 0 0 5px #F2A7C3;animation:br 3.2s ease-in-out infinite}
+#go button:hover{background:#B9A3E3;color:#07060B}
+#go small{opacity:.7;letter-spacing:.2em}
+@keyframes br{50%{border-color:#F2A7C3}}
+#cr{position:fixed;right:18px;bottom:14px;font:600 11px ui-monospace,Menlo,Consolas,monospace;color:#B9A3E3;letter-spacing:.12em;opacity:0;text-align:right;pointer-events:none}
+</style></head><body>
+<canvas id="c"></canvas>
+<div id="go"><button id="b">comenzar</button><small>mejor con audífonos</small></div>
+<div id="cr">música y web<br>Marco Calderón</div>
+<script type="module" src="src/main.js"></script>
+</body></html>
